@@ -17,7 +17,7 @@ jobs:
       - name: Build APK
         run: |
           git config --global --add safe.directory /__w/My-wellness/My-wellness
-          buildozer android debug
+          yes | buildozer android debug
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
